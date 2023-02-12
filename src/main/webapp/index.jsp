@@ -2,14 +2,28 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title><%= "some title" %></title>
+    <title><%= "Adlister" %></title>
+
+<%--    <%@ include file="/partials/head.jsp" %>--%>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
 </head>
 <body>
-    <c:if test="true">
-        <h1>Variable names should be very descriptive</h1>
-    </c:if>
-    <c:if test="false">
-        <h1>single letter variable names are good</h1>
-    </c:if>
+
+<%--<%@ include file="/partials/navBar.jsp" %>--%>
+
+<c:if test="true">
+    <h1>AdLister</h1>
+</c:if>
+
+<c:if test="false">
+    <h1>Something went wrong!</h1>
+</c:if>
+
 </body>
 </html>
